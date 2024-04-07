@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #d7d5f3; /* Green */
+    color: #574848;
+    opacity: 80%;
+  }
+  .bg-2 { 
+    background-color: #f5d5f5; /* Dark Blue */
+    color: #685e5e;
+    opacity: 80%;
+  }
+  .bg-3 { 
+    background-color: #e1eff1; /* White */
+    color: #555555;
+    opacity: 80%;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Foodies Corner</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">MENU</a></li>
+        <li><a href="#menu">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center" id="about">
+  <h3 class="margin" style="letter-spacing:5px;">About Our Restaurant!!!</h3>
+  <h4 style="letter-spacing:3px;">Since 2015...</h4>
+  <img src="img1.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="380" height="380">
+  <h3>Welcome!! Have a Good food and Healthy Life...</h3>
+</div>
+
+<!-- Second Container (Grid) -->
+<div class="container-fluid bg-3 text-center" id="contact">    
+  <h3 class="margin" style="font-weight: bold;">MENU ITEMS</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <h4 style="color:black;">Starters</h4>
+      <p>Starters are often served before the actual main-course meals. A starter would kick start our appetite and we would really become ready for the actual main-course meals. Mostly fried and grilled chicken recipes are served as the starters. Some of the starter recipes are fried chilli-chicken, chicken satay, hot basil chicken cups and cheese balls.</p>
+      <img src="img2.jpg" class="img-responsive margin" style="width:100%;height:300px;" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+        <h4 style="color:black;">Main course</h4>
+      <p>The main course is food that is served as the main dish in a multi-course meal. It is often served after the entrée. In the United States, the main course may be called the "entrée". Other dishes are set wherever there is space on the table. The host offers the main dish to the person to the right, who then passes it to the next person on the right, and so on until everyone has been served. </p>
+      <img src="img1.jpg" class="img-responsive margin" style="width:100%;height:300px;" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <h4 style="color:black;">Deserts</h4>
+      <p>This may be due to having a low income or having to travel farther to find healthful food options. Desserts serve as the final course, marking the completion of a well-rounded meal. They provide a sense of closure and satisfaction, signaling that the main course has concluded. Balancing flavors: Desserts help balance and complement the flavors of the preceding courses.</p>
+      <img src="img3.jpg" class="img-responsive margin" style="width:100%;height:300px;" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Third Container -->
+<div class="container-fluid bg-2 text-center" id="menu" >
+    <h3 class="margin">CONTACT</h3>
+    <p>Get in touch! We are available for day and night.</p>
+    <form action="/action_page.php" class="form-horizontal">
+      <div class="form-group">
+        <label for="text" class="control-label col-sm-2">Name *</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" placeholder="Enter Name"></div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="control-label col-sm-2">Email *</label>
+        <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter Email"></div>
+      </div>
+      <div class="form-group">
+        <label for="comment" class="control-label col-sm-2">Comment</label>
+        <div class="col-sm-10">
+        <input type="textarea" class="form-control" id="cmt"></div>
+      </div>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+  </div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>copyrights@foodiescorner</p> 
+</footer>
+
+</body>
+</html>
